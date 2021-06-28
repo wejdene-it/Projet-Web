@@ -1,0 +1,115 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+li {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/******Navbar********/
+nav {
+    overflow:hidden;
+    position: fixed;
+    background-color: #C9ADA7;
+    width: 100%;
+    opacity: 0.9;
+    
+}
+
+  header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    color:#22223B; 
+    font-size: 1.5em;
+    float:left;
+  }
+
+  titre{
+    padding-top: 60px; 
+    overflow: hidden;
+    background-color: #22223B;
+  }
+
+  #Montre{
+    padding-top: 60px;
+    overflow: hidden;
+    background-color: #22223B;
+    color: #C9ADA7;
+    display: flex;
+  }
+
+  .montreblock{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .montreblock img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+   }
+
+  #Bijoux{
+    overflow: hidden;
+    background-color: #C9ADA7;
+    color: #22223B;
+    display: flex;
+  }
+  .bijouxblock{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .bijouxblock img:hover {
+   opacity: 0.5;
+   transform: scale(1.05);
+   transition: 0.6s ease-in-out;
+  }
+
+  .litems {
+    color: #C9ADA7;
+    padding-top: 0px;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    align-items: center;
+    display: flex;
+  }
+
+h2 {
+   font-size: 40px;
+   font-family:sans-serif;
+   padding: 0px 2%;
+}
+
+h3{
+ font-family: Montserrat,sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-style: normal;
+  margin: 15px;
+}
+
+h4{
+  font-family:sans-serif ;
+  text-align: center;
+  font-size: 1em;
+  margin: 15px;
+}
+
+
+
