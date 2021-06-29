@@ -57,7 +57,7 @@ header li a:hover{
     font-size: 22px;
     font-family: 'Bad Script', cursive;
     padding: 0px 2%;
-   
+   text-align: center;
  }
  #venteP{
     padding-top: 60px;
@@ -181,4 +181,6 @@ footer li a{
 .bijouxblock a {
   color:#22223B;
 }
-
+div a:visited{
+  text-align: center;
+}
