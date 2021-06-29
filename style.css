@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 body{
   padding: 0;
   margin: 0;
@@ -24,8 +25,7 @@ nav {
     position: fixed;
     background-color: #f2e9e4;
     width: 100%;
-    opacity: 0.9;
-    
+    opacity: 0.9;  
 }
 
 header li a {
@@ -38,11 +38,14 @@ header li a {
   padding: 20px 30px;
   color:#22223B; 
 }
+header li a:hover{
+  color:white;
+}
 
 #logo{
   font-size: 2em;
   float: right;
-  padding: 10px  500px 10px 10px;
+  padding: 10px  600px 10px 10px;
   font-family: 'Satisfy', cursive;
 }
   titre{
@@ -51,15 +54,44 @@ header li a {
     background-color: #22223B;
   }
   h2 {
-    font-size: 40px;
+    font-size: 22px;
     font-family: 'Bad Script', cursive;
     padding: 0px 2%;
    
  }
-  #Montre{
+ #venteP{
     padding-top: 60px;
     overflow: hidden;
-    background-color: #22223B;
+    background-color:#C9ADA7;
+    text-align: center;
+}
+ .venteP{
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+ }
+
+.venteP a{
+ text-align: center;
+  color:#22223B;
+  font-family: 'Bad Script', cursive;
+  font-size: 1.3em;
+}
+
+.venteP a
+{
+    color :#22223B;
+}
+ 
+.venteP a:hover
+{
+    color :white;
+}
+
+  #Montre{
+    padding-top: 30px;
+    overflow: hidden;
+   background-color: #22223B;
     color: #C9ADA7;
     display: flex;
   }
@@ -78,6 +110,7 @@ header li a {
    }
 
   #Bijoux{
+    padding-top: 30px;
     overflow: hidden;
     background-color: #C9ADA7;
     color: #22223B;
@@ -100,6 +133,8 @@ header li a {
 
 h3{
  font-family: "Advent Pro";
+ text-decoration: none;
+ color: #C9ADA7;
   text-align: center;
   font-size: 1em;
   font-style: normal;
@@ -109,9 +144,11 @@ h3{
 }
 
 h4{
-  font-family:'Advent Pro';
+  font-family: "Advent Pro";
+  color: #C9ADA7;
   text-align: center;
   font-size: 1em;
+  font-style: normal;
   margin: 15px;
 }
 h5{
@@ -122,7 +159,7 @@ h5{
 
 
 footer{
-  padding-top: 60px;
+  padding-top: 30px;
   overflow: hidden;
   background-color: #22223B;
   color: #C9ADA7;
@@ -137,3 +174,11 @@ footer li a{
   font-size: 1.3em;
   padding: 20px 20px;
 }
+.montreblock a{
+  color:#C9ADA7;
+}
+
+.bijouxblock a {
+  color:#22223B;
+}
+
