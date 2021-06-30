@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 body{
   padding: 0;
   margin: 0;
@@ -26,8 +27,11 @@ nav {
     background-color: #f2e9e4;
     width: 100%;
     opacity: 0.9;  
+    z-index:10;
 }
-
+div {
+  overflow: hidden;
+}
 header li a {
   float: right;
   font-family: "Advent Pro";
@@ -58,6 +62,7 @@ header li a:hover{
     font-family: 'Bad Script', cursive;
     padding: 0px 2%;
    text-align: center;
+   margin-top: 0;
  }
  #venteP{
     padding-top: 60px;
@@ -99,15 +104,35 @@ header li a:hover{
   .montreblock{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content:space-between;
+    padding: 40px;
+  }
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+
+   padding-left: 100px;
+  
+  
+  }
+  .containerr{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-left: 50px ;
+    
+
+  }
+  .containerrr{
+    
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-left: 40px ;
+    display: table-cell; /* comportement visuel de cellule */
+    vertical-align: middle;
   }
 
-  .montreblock img:hover {
-    opacity: 0.5;
-    transform: scale(1.05);
-    transition: 0.6s ease-in-out;
-   }
+  
 
   #Bijoux{
     padding-top: 30px;
@@ -120,7 +145,8 @@ header li a:hover{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 200px;
+    
   }
   
   .bijouxblock img:hover {
@@ -134,13 +160,10 @@ header li a:hover{
 h3{
  font-family: "Advent Pro";
  text-decoration: none;
- color: #C9ADA7;
-  text-align: center;
-  font-size: 1em;
-  font-style: normal;
-  margin: 15px;
-  
-  
+ color: black;
+ text-align: center;
+ font-size: 1em;
+ font-style: normal;
 }
 
 h4{
@@ -184,3 +207,182 @@ footer li a{
 div a:visited{
   text-align: center;
 }
+
+
+/*********Carousel******/
+
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  height: 210px;
+  
+}
+
+img {
+  
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.card1 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.containerr {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards1 {
+  position: relative;
+  width: 300px;
+  height: 210px;
+}
+
+img {
+  
+  object-fit: cover;
+}
+
+#item-21:checked ~ .cards1 #song-3, #item-22:checked ~ .cards1 #song-1, #item-33:checked ~ .cards1 #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-21:checked ~ .cards1 #song-2, #item-22:checked ~ .cards1 #song-3, #item-33:checked ~ .cards1 #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-21:checked ~ .cards1 #song-1, #item-22:checked ~ .cards1 #song-2, #item-33:checked ~ .cards1 #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.card11 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.containerrr {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards11 {
+  position: relative;
+  width: 300px;
+  height: 210px;
+}
+
+img {
+  
+  object-fit: cover;
+}
+
+#item-221:checked ~ .cards11 #song-3, #item-222:checked ~ .cards11 #song-1, #item-233:checked ~ .cards11 #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-221:checked ~ .cards11 #song-2, #item-222:checked ~ .cards11 #song-3, #item-233:checked ~ .cards11 #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-221:checked ~ .cards11 #song-1, #item-222:checked ~ .cards11 #song-2, #item-233:checked ~ .cards11 #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+
+
+
