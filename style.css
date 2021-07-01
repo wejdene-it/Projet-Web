@@ -107,6 +107,7 @@ header li a:hover{
     flex-wrap: wrap;
     justify-content:space-between;
     padding: 40px;
+    padding-bottom: 20px;
   }
   .container{
     display:flex;
@@ -146,7 +147,7 @@ header li a:hover{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-left: 130px;
    
     
@@ -185,13 +186,13 @@ h5{
 
 
 footer{
-  padding-top: 30px;
+  padding-top: 10px;
   overflow: hidden;
   background-color: #22223B;
   color: #C9ADA7;
   display: flex;
   flex-wrap: wrap;
-
+ margin-bottom: 20px;
   
 }
 footer li a{
